@@ -1,0 +1,7 @@
+{
+  "name": "Royal Enfield Kakching",
+  "description": "Official Royal Enfield dealership in Kakching, Manipur. Explore motorcycles, book services, and find genuine parts.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

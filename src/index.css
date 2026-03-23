@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Rajdhani:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Rajdhani", sans-serif;
+  --font-serif: "Crimson Text", serif;
+  
+  --color-black: #0a0a0a;
+  --color-charcoal: #1a1a1a;
+  --color-dark: #111111;
+  --color-gold: #c9933a;
+  --color-gold-light: #e8b96a;
+  --color-gold-pale: #f5e6c8;
+  --color-cream: #f8f4ec;
+  --color-red-brand: #8b1a1a;
+  --color-gray-brand: #888888;
+  --color-border-brand: rgba(201, 147, 58, 0.25);
+}
+
+@layer base {
+  body {
+    @apply bg-black text-cream font-sans antialiased overflow-x-hidden;
+  }
+}
+
+.gold-rule {
+  @apply w-16 h-0.5 bg-gold my-5;
+}
+
+.section-padding {
+  @apply py-24 px-[8%];
+}
+
+.btn-primary {
+  @apply bg-gold text-black px-9 py-4 text-[13px] font-bold uppercase tracking-[2px] transition-all hover:bg-gold-light hover:-translate-y-0.5 inline-block;
+}
+
+.btn-outline {
+  @apply border border-cream text-cream px-9 py-4 text-[13px] font-semibold uppercase tracking-[2px] transition-all hover:border-gold hover:text-gold inline-block;
+}
+
+.section-eyebrow {
+  @apply text-[11px] font-bold uppercase tracking-[4px] text-gold mb-3;
+}
+
+.section-title {
+  @apply font-display text-4xl md:text-5xl font-bold text-white leading-[1.1] mb-5;
+}
+
+.section-desc {
+  @apply font-serif text-lg leading-[1.7] text-cream/70 max-w-[560px];
+}
